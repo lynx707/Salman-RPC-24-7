@@ -24,7 +24,7 @@ client.on('ready', async () => {
 
   const r = new Discord.RichPresence()
     .setApplicationId('1079010612769722508')
-    .setType('WATCHING')
+    .setType('PLAYING')
     .setURL('https://www.youtube.com/patkhet') //Must be a youtube video link 
     .setState('Discord Community')
     .setName('Patkhet')
@@ -34,11 +34,11 @@ client.on('ready', async () => {
     .setAssetsLargeText('Patkhet') //Text when you hover the Large image
     .setAssetsSmallImage('https://cdn.discordapp.com/attachments/964235721630154812/1135216057339097159/verify.gif') //You can put links in tenor or discord and etc.
     .setAssetsSmallText('Verify') //Text when you hover the Small image
-    .addButton('Discord Server', 'https://discord.gg/n87vNuk89g')
+    .addButton('Discord Server', 'https://discord.gg/PBED6yEXpT')
     .addButton('Facebook Page', 'https://facebook.com/patkhet.lol');
 
   client.user.setActivity(r);
-  client.user.setPresence({ status: "online" }); //dnd, online, idle, offline
+  client.user.setPresence({ status: "idle" }); //dnd, online, idle, offline
 
   let prevTime = null;
   setInterval(() => {
